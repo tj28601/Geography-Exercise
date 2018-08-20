@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20180808033513) do
 
   create_table "states", force: :cascade do |t|
     t.string "name", null: false
+    t.string "capital", null: false
   end
 
   create_table "users", force: :cascade do |t|
