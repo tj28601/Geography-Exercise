@@ -8,7 +8,6 @@ RSpec.describe State do
   describe 'state model creation' do
     it 'returns list of states' do
 
-
       state_1 = FactoryBot.create(:state)
       state_2 = FactoryBot.create(:state)
 
