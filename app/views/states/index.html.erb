@@ -1,7 +1,7 @@
 <h1> States </h1>
 <%= link_to 'Add New', new_state_path(@state) %>
 <% @states.each do |state| %>
-<li><%= "The capital of #{state.name} is #{state.capital}" %>
-  <%= link_to 'Edit', edit_state_path(state) %> | <%= link_to 'Delete', state, method: :delete, data: { confirm: 'Are you sure u wanna delete dis thang?' } %>
-</li>
+  <li><%= "The capital of #{state.name} is #{state.capital}" %>
+    <%= link_to 'Edit', edit_state_path(state) %> | <%= link_to 'Delete', state, method: :delete, data: { confirm: 'Are you sure u wanna delete dis thang?' } %>
+  </li>
 <% end %>
